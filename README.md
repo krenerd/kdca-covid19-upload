@@ -15,7 +15,7 @@ Python/Selenium 기반 오픈 소스 질병관리청 코로나19 검사 업로�
 
 3. 데이터 자동 입력
 
-[![](http://img.youtube.com/vi/xHgdygkCiY8/0.jpg)](http://www.youtube.com/watch?v=xHgdygkCiY8 "KDCA-covid19-upload 3. 데이터 자동입력")
+[![](http://img.youtube.com/vi/DJTLUl1bidY/0.jpg)](http://www.youtube.com/watch?v=DJTLUl1bidY "3. 데이터 자동입력")
 
 자동으로 `covid19.kdca.go.kr` 에 데이터를 기입하는 프로그램이다. 파일 선택 이후 `데이터 입력` 버튼을 클릭하면 공인 인증서를 입력해야 한다. 입력 이후 다시 프로그램에서 버튼을 클릭하면 자동 입력이 시작된다. 입력에 실패한 검사자들의 목록은 `파일 이름-error.xlsx`에 저장된다. 
 
