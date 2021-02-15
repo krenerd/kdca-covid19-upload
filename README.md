@@ -2,17 +2,20 @@
 Python/Selenium 기반 오픈 소스 질병관리청 코로나19 검사 업로드 프로그램. 
 ## 사용 방법
 1. 프로그램 다운로드
+
 [![](http://img.youtube.com/vi/FfKvMNgEskc/0.jpg)](http://www.youtube.com/watch?v=FfKvMNgEskc "KDCA-covid19-upload 1. 프로그램 다운로드")
 
 2. 데이터 수정
-(video)
+
+[![](http://img.youtube.com/vi/44g8N0fyJ68/0.jpg)](http://www.youtube.com/watch?v=44g8N0fyJ68 "KDCA-covid19-upload 2. 데이터 수정")
 
 데이터 파일을 입력 프로그램의 양식에 맞게 수정하는 프로그램이다. 주소를 검색하여 올바른 형식으로 기입하고, 미기입 항목을 default 값으로 입력하거나 오류를 찾아내는 역할을 한다. 또한 전화번호와 주민등록 번호가 올바르게 입력되어 있는지를 확인한다. 수정된 데이터는 `파일 이름-refined.xlsx` 으로 저장된다.
  
 데이터 수정 과정에서 발생한 오류는 자동으로 수정되거나, 혹은 `오류`행에 오류 메세지를 표시한다. 프로그램 입력 시 `오류` 행이 비어있지 않은(오류가 발생한) 열은 입력되지 않는다. 따라서 오류를 수정한 이후에는 `오류` 행의 정보를 삭제해야 입력이 정상적으로 이루어진다. 데이터의 즉각적인 수정이 불가능한 상황이면 `오류`를 삭제하지 않고 자동 입력 프로그램을 실행하는 것도 가능하다. 
 
 3. 데이터 자동 입력
-(video)
+
+[![](http://img.youtube.com/vi/JqB9IKw1Auc/0.jpg)](http://www.youtube.com/watch?v=JqB9IKw1Auc "KDCA-covid19-upload 3. 데이터 자동입력")
 
 자동으로 `covid19.kdca.go.kr` 에 데이터를 기입하는 프로그램이다. 파일 선택 이후 `데이터 입력` 버튼을 클릭하면 공인 인증서를 입력해야 한다. 입력 이후 다시 프로그램에서 버튼을 클릭하면 자동 입력이 시작된다. 입력에 실패한 검사자들의 목록은 `파일 이름-error.xlsx`에 저장된다. 
 
