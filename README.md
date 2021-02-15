@@ -17,8 +17,11 @@ Python/Selenium 기반 오픈 소스 질병관리청 코로나19 검사 업로�
 
 ### 유의사항 
 1. [이곳](https://www.whatismybrowser.com/detect/what-version-of-chrome-do-i-have) 에서 확인한 Chrome 브라우저 버전이 88.xx 이여야 한다.
+
 1.1 버전이 일치하지 않는다면 [링크](https://chromedriver.chromium.org/downloads)에서 해당 브라우저의 버전에 맞는 chrome driver를 설치하고 압축해제 후 프로그램 폴더에 있는 기존의 chromedriver.exe와 교체한다.
+
 1.2 혹은 88버전의 크롬을 설치한다. [다운그레이드 방법](https://support.google.com/chrome/a/answer/7125792?hl=en#zippy=%2Cstep-downgrade-chrome), [88버전 수동 설치](https://www.techspot.com/downloads/4718-google-chrome-for-windows.html)
+
 2. Windows 운영체제에서 실행해야 한다. 
 3. 입력 데이터는 반드시 입력 양식에 맞게 작성되어야 하며 오류 항목은 `데이터 수정` 이후 검사된다.
 
