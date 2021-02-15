@@ -2,7 +2,7 @@
 Python/Selenium 기반 오픈 소스 질병관리청 코로나19 검사 업로드 프로그램. 
 ## 사용 방법
 1. 프로그램 다운로드
-(video)
+[![](http://img.youtube.com/vi/FfKvMNgEskc/0.jpg)](http://www.youtube.com/watch?v=FfKvMNgEskc "KDCA-covid19-upload 1. 프로그램 다운로드")
 
 2. 데이터 수정
 (video)
