@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['interface.py'],
-             pathex=['C:\\Users\\Kunhee\\Desktop\\질병입력system'],
+             pathex=['C:\\Users\\Kunhee\\Desktop\\kdca-covid19-upload\\code'],
              binaries=[],
              datas=[],
              hiddenimports=[],
