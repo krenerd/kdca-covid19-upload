@@ -9,10 +9,9 @@ def refine_data():
     global file_path
     upload['state']='disabled'
     refine['state']='disabled'
-    #complete['state']='disabled'
-    #data_refiner.refine_data(file_path,top,text_area)
-    data_refiner.refine_address(file_path,top,text_area)
-   
+    complete['state']='disabled'
+    data_refiner.refine_data(file_path,top,text_area)
+    
     upload['state']='normal'
 def configure_TK():
     top=tk.Tk()
@@ -48,7 +47,7 @@ def upload_image():
         if valid_file_path(file_path):
             upload['state']='disabled'
             refine['state']='normal'
-            #complete['state']='normal'
+            complete['state']='normal'
     except:
         pass
 
@@ -60,10 +59,10 @@ upload=Button(top,text="엑셀 파일 선택",command=upload_image,
 upload.configure(background='#364156', foreground='white',
     font=('arial',10,'bold'))
 
-#complete=Button(top,text="데이터 입력",command=enter_excel,
-#      padx=10,pady=5)
-#complete.configure(background='#364156', foreground='white',
-#      font=('arial',10,'bold'))
+complete=Button(top,text="데이터 입력",command=enter_excel,
+      padx=10,pady=5)
+complete.configure(background='#364156', foreground='white',
+      font=('arial',10,'bold'))
 
 refine=Button(top,text="데이터 수정",command=refine_data,
       padx=10,pady=5)
@@ -77,7 +76,7 @@ text_area = scrolledtext.ScrolledText(top,  wrap = tk.WORD, width = 50, height =
 label.pack(side=BOTTOM,expand=True)
 text_area.pack(side=BOTTOM)
 entry1.pack(side=BOTTOM,pady=8)
-#complete.pack(side=BOTTOM)
+complete.pack(side=BOTTOM)
 refine.pack(side=BOTTOM,pady=8)
 upload.pack(side=BOTTOM)
 
@@ -88,6 +87,6 @@ heading.configure(background='#CDCDCD',foreground='#364156')
 heading.pack()
 
 refine['state']='disabled'
-#complete['state']='disabled'
+complete['state']='disabled'
 text_area['state']='disabled'
 top.mainloop()
