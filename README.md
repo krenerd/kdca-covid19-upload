@@ -7,7 +7,7 @@ Python/Selenium 기반 오픈 소스 질병관리청 코로나19 검사 업로�
 
 2. 데이터 수정
 
-[![](http://img.youtube.com/vi/dWib2Hu2XE4/0.jpg)](http://www.youtube.com/watch?v=dWib2Hu2XE4 "KDCA-covid19-upload 2. 데이터 수정")
+[![](http://img.youtube.com/vi/F5rnIJWLzfg/0.jpg)](http://www.youtube.com/watch?v=F5rnIJWLzfg "2. 데이터 수정")
 
 데이터 파일을 입력 프로그램의 양식에 맞게 수정하는 프로그램이다. 주소를 검색하여 올바른 형식으로 기입하고, 미기입 항목을 default 값으로 입력하거나 오류를 찾아내는 역할을 한다. 또한 전화번호와 주민등록 번호가 올바르게 입력되어 있는지를 확인한다. 수정된 데이터는 `파일 이름-refined.xlsx` 으로 저장된다.
  
@@ -15,9 +15,11 @@ Python/Selenium 기반 오픈 소스 질병관리청 코로나19 검사 업로�
 
 3. 데이터 자동 입력
 
-[![](http://img.youtube.com/vi/xHgdygkCiY8/0.jpg)](http://www.youtube.com/watch?v=xHgdygkCiY8 "KDCA-covid19-upload 3. 데이터 자동입력")
+[![](http://img.youtube.com/vi/DJTLUl1bidY/0.jpg)](http://www.youtube.com/watch?v=DJTLUl1bidY "3. 데이터 자동입력")
 
 자동으로 `covid19.kdca.go.kr` 에 데이터를 기입하는 프로그램이다. 파일 선택 이후 `데이터 입력` 버튼을 클릭하면 공인 인증서를 입력해야 한다. 입력 이후 다시 프로그램에서 버튼을 클릭하면 자동 입력이 시작된다. 입력에 실패한 검사자들의 목록은 `파일 이름-error.xlsx`에 저장된다. 
+
+`31700543`이 기본값으로 입력되어있는 입력창에는 해당 보건소/기관의 요양기관명 혹은 요양기관 번호를 기입해야 한다. 
 
 ### 유의사항 
 1. [이곳](https://www.whatismybrowser.com/detect/what-version-of-chrome-do-i-have) 에서 확인한 Chrome 브라우저 버전이 88.xx 이여야 한다.
