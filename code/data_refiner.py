@@ -5,49 +5,6 @@ import time
 import tkinter as tk
 from selenium.webdriver.chrome.options import Options
 
-def refine_address(data_path,root,text_area):
-    df=pd.read_excel(data_path,engine='openpyxl')
-
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    d=webdriver.Chrome(executable_path='chromedriver',options=chrome_options)
-
-    text_area['state']='normal'
-    text_area.insert(tk.INSERT,'\n데이터 수정을 시작합니다. \n')
-    text_area.yview_pickplace("end")
-    text_area['state']='disabled'
-
-    for idx in range(df.shape[0]):
-        if (idx+1)%10==0:
-            text_area['state']='normal'
-            text_area.insert(tk.INSERT,f'{idx+1}/{df.shape[0]} 수정완료\n')
-            text_area.yview_pickplace("end")
-            text_area['state']='disabled'
-            
-            
-        root.update()
-        #도로명 주소 수정
-        if df['도로명주소'].isnull()[idx]==False:
-            address=df['도로명주소'][idx]
-            d.get('https://www.juso.go.kr/openIndexPage.do')
-            d.implicitly_wait(3)
-            d.find_element_by_xpath('//*[@id="inputSearchAddr"]').send_keys(address)
-            d.find_element_by_xpath('//*[@id="AKCFrm"]/fieldset/div/button').click()
-            d.implicitly_wait(3)
-            try:
-                df.at[idx,'도로명주소']=d.find_element_by_xpath('//*[@id="list1"]/div[1]/span[2]').text
-            except:
-                df.at[idx,'도로명주소']='검색 실패: '+df.at[idx,'도로명주소']
-        else:
-            pass
-        
-    text_area['state']='normal'
-    text_area.insert(tk.INSERT,"refined.xlsx로 파일 내보내는 중...")
-    df.to_excel(data_path.split('/')[-1].split('.')[0]+'-refined.xlsx',index=False)
-    d.quit()
-    text_area.insert(tk.INSERT,'sieunpark77@gmail.com')
-    text_area['state']='disabled'
-    
 def refine_data(data_path,root,text_area):
     df=pd.read_excel(data_path,engine='openpyxl')
 
